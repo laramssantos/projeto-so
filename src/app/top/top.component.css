@@ -1,0 +1,11 @@
+.top {
+  position: absolute;
+  width: 616px;
+  height: 492px;
+  left: 404px;
+  top: 130px;
+
+  background: #2D2D2D;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
