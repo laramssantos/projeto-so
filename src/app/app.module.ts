@@ -8,6 +8,7 @@ import { CpuComponent } from './cpu/cpu.component';
 import { TopComponent } from './top/top.component';
 import { MemoriaComponent } from './memoria/memoria.component';
 import { DiscoComponent } from './disco/disco.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,11 +18,12 @@ import { DiscoComponent } from './disco/disco.component';
     CpuComponent,
     TopComponent,
     MemoriaComponent,
-    DiscoComponent
+    DiscoComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DiskInfo } from '../interfaces/disk-info';
+import { CommandsService } from '../services/commands.service';
 
 @Component({
   selector: 'app-disco',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./disco.component.css']
 })
 export class DiscoComponent {
+  disk: DiskInfo;
 
+  constructor(private comm: CommandsService){
+    this.comm.getDiskInfo().subscribe((data: DiskInfo) => {
+      this.disk = data;
+      console.log(this.disk)
+    });
+  }
 }
