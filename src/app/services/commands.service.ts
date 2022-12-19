@@ -26,5 +26,9 @@ export class CommandsService {
   public getSystemInfo(){
     return this.http.get('http://localhost:8000/sistema');
   }
+
+  public getCommand(command: string){
+    return this.http.post('http://localhost:8000/terminal', {comando: command});
+  }
   
 }

@@ -24,7 +24,6 @@ export class TopComponent {
     this.comm.getSystemInfo().subscribe((data: SystemInfo) => {
       this.top = data;
       this.processos = data.processos;
-      console.log(this.top)
     });
   }
 

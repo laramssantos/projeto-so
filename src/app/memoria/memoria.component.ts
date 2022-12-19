@@ -70,7 +70,6 @@ export class MemoriaComponent {
   updateStatsBar(){
     this.comm.getMemInfo().subscribe((data: MemInfo) => {
       this.mem = data;
-      console.log(this.mem)
       this.barChartData = {
         datasets: [
           { data: [this.mem.memoria_total/1000000, this.mem.memoria_livre/1000000, this.mem.memoria_buffers/1000000, this.mem.memoria_cache/1000000, this.mem.memoria_swap_total/1000000, this.mem.memoria_swap_livre/1000000], label: 'Memória (GB)' },

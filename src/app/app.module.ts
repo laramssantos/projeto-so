@@ -10,6 +10,9 @@ import { MemoriaComponent } from './memoria/memoria.component';
 import { DiscoComponent } from './disco/disco.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgChartsModule } from 'ng2-charts';
+import { TerminalComponent } from './terminal/terminal.component';
+import { NgTerminalModule } from 'ng-terminal';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -20,12 +23,15 @@ import { NgChartsModule } from 'ng2-charts';
     TopComponent,
     MemoriaComponent,
     DiscoComponent,
+    TerminalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgChartsModule
+    NgChartsModule,
+    NgTerminalModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -44,7 +44,6 @@ export class CpuComponent {
   constructor(private comm: CommandsService){
     this.comm.getCpuInfo().subscribe((data: CpuInfo) => {
       this.cpu = data;
-      console.log(this.cpu)
     });
     this.comm.getSystemInfo().subscribe((data: SystemInfo) => {
       this.top = data;
