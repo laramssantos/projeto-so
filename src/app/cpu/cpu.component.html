@@ -1,3 +1,21 @@
 <div class="cpu">
   <h2>Informações da CPU</h2>
+  <div class="inside">
+    <h3 id="label">Processador:</h3>
+    <p id="campos">{{cpu.modelo}}</p>
+
+    <h3 id="label">Número de Núcleos: <a style="color:#e6bfff;">{{cpu.num_nucleos}}</a></h3>
+
+    <h3 id="label">Número de Threads: <a style="color:#e6bfff;">{{cpu.num_threads}}</a></h3>
+
+    <div class="bar">
+      <canvas style="height: 170px;" baseChart
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [type]="'bar'">
+      </canvas>
+    </div>
+  </div>
 </div>

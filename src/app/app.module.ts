@@ -9,6 +9,7 @@ import { TopComponent } from './top/top.component';
 import { MemoriaComponent } from './memoria/memoria.component';
 import { DiscoComponent } from './disco/disco.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

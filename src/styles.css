@@ -1,9 +1,3 @@
-* {
-  width: 1440px;
-  height: 1024px;
-  background: #000000;
-}
-
 h1{
   position: relative;
   width: 300px;
@@ -39,4 +33,27 @@ h2{
 
   background: #2D2D2D;
   color: #C2AEFF;
+}
+
+h3{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 45px;
+  color:#ce9bff;
+}
+
+p{
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 45px;
+  color:#e6bfff;
+}
+
+.inside{
+  position: relative;
+  top:100px;
 }

@@ -1,3 +1,30 @@
 <div class="top">
-  <h2>Top</h2>
+  <h2>Processos</h2>
+  <div class="inside">
+    <table>
+      <tr id="label">
+        <th>PID</th>
+        <th>User</th>
+        <th>PR</th>
+        <th>Nice</th>
+        <th>Estado</th>
+        <th>CPU%</th>
+        <th>Memória%</th>
+        <th>Tempo</th>
+        <th>Comando</th>
+      </tr>
+
+      <tr id="campos" *ngFor="let processo of this.processos">
+        <th>{{processo.pid}}</th>
+        <th>{{processo.usuario}}</th>
+        <th>{{processo.prioridade}}</th>
+        <th>{{processo.nice}}</th>
+        <th>{{processo.estado}}</th>
+        <th>{{processo.pct_cpu}}</th>
+        <th>{{processo.pct_mem}}%</th>
+        <th>{{processo.tempo}}</th>
+        <th>{{processo.programa}}</th>
+      </tr>
+    </table>
+  </div>
 </div>
